@@ -3,16 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00FD0AEF6D7CA37D712233B4 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E485C3AAA6373B380F98213 /* Pods_Repository.framework */; };
 		179460582316773500060205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460572316773500060205 /* AppDelegate.swift */; };
-		1794605A2316773500060205 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460592316773500060205 /* ViewController.swift */; };
-		1794605D2316773500060205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1794605B2316773500060205 /* Main.storyboard */; };
 		1794605F2316773700060205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1794605E2316773700060205 /* Assets.xcassets */; };
 		179460622316773700060205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179460602316773700060205 /* LaunchScreen.storyboard */; };
 		1794606D2316773700060205 /* HostelWorldChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1794606C2316773700060205 /* HostelWorldChallengeUITests.swift */; };
+		179460812316791300060205 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 1794607F2316791300060205 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		179460842316791300060205 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1794607D2316791300060205 /* Domain.framework */; };
+		179460852316791300060205 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1794607D2316791300060205 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		179460942316795C00060205 /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = 179460922316795C00060205 /* Repository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		179460972316795C00060205 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179460902316795C00060205 /* Repository.framework */; };
+		179460982316795C00060205 /* Repository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 179460902316795C00060205 /* Repository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		179460A32316798E00060205 /* RespositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460A22316798E00060205 /* RespositoryTests.swift */; };
+		179460A52316798E00060205 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179460902316795C00060205 /* Repository.framework */; };
+		179460AD23167A7000060205 /* PropertySummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460AC23167A7000060205 /* PropertySummary.swift */; };
+		179460AF2316818500060205 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460AE2316818500060205 /* Property.swift */; };
+		179460B12316823000060205 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460B02316823000060205 /* Address.swift */; };
+		179460B3231683A100060205 /* RepositoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460B2231683A100060205 /* RepositoryContainer.swift */; };
+		179460B62316840700060205 /* HostelWorldMockWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460B52316840700060205 /* HostelWorldMockWebservice.swift */; };
+		179460B82316842800060205 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460B72316842800060205 /* DataStore.swift */; };
+		179460B92316852A00060205 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1794607D2316791300060205 /* Domain.framework */; };
+		179460BB2316862C00060205 /* HostelWorldEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460BA2316862C00060205 /* HostelWorldEndpoint.swift */; };
+		179460BE23168AD800060205 /* Domain + Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179460BD23168AD800060205 /* Domain + Decodable.swift */; };
+		2251BD7DB3F31B3DB284591C /* Pods_HostelWorldChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE347A8C9287BBF3CF4F73BF /* Pods_HostelWorldChallengeUITests.framework */; };
+		671D93E8A1EE5D3CFCE79059 /* Pods_RespositoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDEDDF2639246998596BD746 /* Pods_RespositoryTests.framework */; };
+		DE5819F7EE90CBFA0156815A /* Pods_HostelWorldChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EE7C0EFCD49729C2CD4F9F /* Pods_HostelWorldChallenge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,19 +42,89 @@
 			remoteGlobalIDString = 179460532316773500060205;
 			remoteInfo = HostelWorldChallenge;
 		};
+		179460822316791300060205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1794604C2316773500060205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1794607C2316791300060205;
+			remoteInfo = Domain;
+		};
+		179460952316795C00060205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1794604C2316773500060205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1794608F2316795C00060205;
+			remoteInfo = Repository;
+		};
+		179460A62316798E00060205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1794604C2316773500060205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1794608F2316795C00060205;
+			remoteInfo = Repository;
+		};
+		179460BF2316918500060205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1794604C2316773500060205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 179460532316773500060205;
+			remoteInfo = HostelWorldChallenge;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		179460892316791300060205 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				179460982316795C00060205 /* Repository.framework in Embed Frameworks */,
+				179460852316791300060205 /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1631FE2E560FCDCE8123C2D8 /* Pods-HostelWorldChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostelWorldChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-HostelWorldChallengeUITests/Pods-HostelWorldChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		179460542316773500060205 /* HostelWorldChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostelWorldChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179460572316773500060205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		179460592316773500060205 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1794605C2316773500060205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1794605E2316773700060205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		179460612316773700060205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		179460632316773700060205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		179460682316773700060205 /* HostelWorldChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostelWorldChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1794606C2316773700060205 /* HostelWorldChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostelWorldChallengeUITests.swift; sourceTree = "<group>"; };
 		1794606E2316773700060205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1794607D2316791300060205 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1794607F2316791300060205 /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		179460802316791300060205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		179460902316795C00060205 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		179460922316795C00060205 /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		179460932316795C00060205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		179460A02316798E00060205 /* RespositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RespositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		179460A22316798E00060205 /* RespositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespositoryTests.swift; sourceTree = "<group>"; };
+		179460A42316798E00060205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		179460AC23167A7000060205 /* PropertySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertySummary.swift; sourceTree = "<group>"; };
+		179460AE2316818500060205 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		179460B02316823000060205 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		179460B2231683A100060205 /* RepositoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryContainer.swift; sourceTree = "<group>"; };
+		179460B52316840700060205 /* HostelWorldMockWebservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostelWorldMockWebservice.swift; sourceTree = "<group>"; };
+		179460B72316842800060205 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		179460BA2316862C00060205 /* HostelWorldEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostelWorldEndpoint.swift; sourceTree = "<group>"; };
+		179460BD23168AD800060205 /* Domain + Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain + Decodable.swift"; sourceTree = "<group>"; };
+		4A129999A114DC5CBFE1BA92 /* Pods-RespositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RespositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RespositoryTests/Pods-RespositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5584E4A119D4021D4C590478 /* Pods-RespositoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RespositoryTests.release.xcconfig"; path = "Target Support Files/Pods-RespositoryTests/Pods-RespositoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		69EE7C0EFCD49729C2CD4F9F /* Pods_HostelWorldChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HostelWorldChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A024A40F2E8972170C2B876 /* Pods-HostelWorldChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostelWorldChallenge.release.xcconfig"; path = "Target Support Files/Pods-HostelWorldChallenge/Pods-HostelWorldChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		7E485C3AAA6373B380F98213 /* Pods_Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83629ED2C8395C1C782A3847 /* Pods-Repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.debug.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.debug.xcconfig"; sourceTree = "<group>"; };
+		BCDF0A8D7E6B231729D36994 /* Pods-HostelWorldChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostelWorldChallenge.debug.xcconfig"; path = "Target Support Files/Pods-HostelWorldChallenge/Pods-HostelWorldChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		BE347A8C9287BBF3CF4F73BF /* Pods_HostelWorldChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HostelWorldChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB8BC835C4459AC2D2C8CCF3 /* Pods-HostelWorldChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HostelWorldChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-HostelWorldChallengeUITests/Pods-HostelWorldChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E12A2EB2F3D9380D57AD4F4C /* Pods-Repository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repository.release.xcconfig"; path = "Target Support Files/Pods-Repository/Pods-Repository.release.xcconfig"; sourceTree = "<group>"; };
+		FDEDDF2639246998596BD746 /* Pods_RespositoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RespositoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +132,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179460972316795C00060205 /* Repository.framework in Frameworks */,
+				179460842316791300060205 /* Domain.framework in Frameworks */,
+				DE5819F7EE90CBFA0156815A /* Pods_HostelWorldChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +142,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2251BD7DB3F31B3DB284591C /* Pods_HostelWorldChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1794607A2316791300060205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1794608D2316795C00060205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179460B92316852A00060205 /* Domain.framework in Frameworks */,
+				00FD0AEF6D7CA37D712233B4 /* Pods_Repository.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1794609D2316798E00060205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179460A52316798E00060205 /* Repository.framework in Frameworks */,
+				671D93E8A1EE5D3CFCE79059 /* Pods_RespositoryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +179,12 @@
 			children = (
 				179460562316773500060205 /* HostelWorldChallenge */,
 				1794606B2316773700060205 /* HostelWorldChallengeUITests */,
+				1794607E2316791300060205 /* Domain */,
+				179460912316795C00060205 /* Repository */,
+				179460A12316798E00060205 /* RespositoryTests */,
 				179460552316773500060205 /* Products */,
+				C7FCE0488D7632BE17D4D03E /* Pods */,
+				E0BB4A89625056216CD693C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +193,9 @@
 			children = (
 				179460542316773500060205 /* HostelWorldChallenge.app */,
 				179460682316773700060205 /* HostelWorldChallengeUITests.xctest */,
+				1794607D2316791300060205 /* Domain.framework */,
+				179460902316795C00060205 /* Repository.framework */,
+				179460A02316798E00060205 /* RespositoryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,12 +203,8 @@
 		179460562316773500060205 /* HostelWorldChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				179460772316788C00060205 /* Support */,
 				179460572316773500060205 /* AppDelegate.swift */,
-				179460592316773500060205 /* ViewController.swift */,
-				1794605B2316773500060205 /* Main.storyboard */,
-				1794605E2316773700060205 /* Assets.xcassets */,
-				179460602316773700060205 /* LaunchScreen.storyboard */,
-				179460632316773700060205 /* Info.plist */,
 			);
 			path = HostelWorldChallenge;
 			sourceTree = "<group>";
@@ -96,20 +218,147 @@
 			path = HostelWorldChallengeUITests;
 			sourceTree = "<group>";
 		};
+		179460772316788C00060205 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1794605E2316773700060205 /* Assets.xcassets */,
+				179460602316773700060205 /* LaunchScreen.storyboard */,
+				179460632316773700060205 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1794607E2316791300060205 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1794608A2316791E00060205 /* Support */,
+				179460AC23167A7000060205 /* PropertySummary.swift */,
+				179460AE2316818500060205 /* Property.swift */,
+				179460B02316823000060205 /* Address.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1794608A2316791E00060205 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1794607F2316791300060205 /* Domain.h */,
+				179460802316791300060205 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		179460912316795C00060205 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				179460AB2316799A00060205 /* Support */,
+				179460B4231683CE00060205 /* HostelWorld Mock */,
+				179460B2231683A100060205 /* RepositoryContainer.swift */,
+				179460B72316842800060205 /* DataStore.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		179460A12316798E00060205 /* RespositoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				179460A22316798E00060205 /* RespositoryTests.swift */,
+				179460A42316798E00060205 /* Info.plist */,
+			);
+			path = RespositoryTests;
+			sourceTree = "<group>";
+		};
+		179460AB2316799A00060205 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				179460922316795C00060205 /* Repository.h */,
+				179460932316795C00060205 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		179460B4231683CE00060205 /* HostelWorld Mock */ = {
+			isa = PBXGroup;
+			children = (
+				179460BC2316895000060205 /* Mappers */,
+				179460B52316840700060205 /* HostelWorldMockWebservice.swift */,
+				179460BA2316862C00060205 /* HostelWorldEndpoint.swift */,
+			);
+			path = "HostelWorld Mock";
+			sourceTree = "<group>";
+		};
+		179460BC2316895000060205 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				179460BD23168AD800060205 /* Domain + Decodable.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		C7FCE0488D7632BE17D4D03E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCDF0A8D7E6B231729D36994 /* Pods-HostelWorldChallenge.debug.xcconfig */,
+				6A024A40F2E8972170C2B876 /* Pods-HostelWorldChallenge.release.xcconfig */,
+				1631FE2E560FCDCE8123C2D8 /* Pods-HostelWorldChallengeUITests.debug.xcconfig */,
+				CB8BC835C4459AC2D2C8CCF3 /* Pods-HostelWorldChallengeUITests.release.xcconfig */,
+				83629ED2C8395C1C782A3847 /* Pods-Repository.debug.xcconfig */,
+				E12A2EB2F3D9380D57AD4F4C /* Pods-Repository.release.xcconfig */,
+				4A129999A114DC5CBFE1BA92 /* Pods-RespositoryTests.debug.xcconfig */,
+				5584E4A119D4021D4C590478 /* Pods-RespositoryTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E0BB4A89625056216CD693C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69EE7C0EFCD49729C2CD4F9F /* Pods_HostelWorldChallenge.framework */,
+				BE347A8C9287BBF3CF4F73BF /* Pods_HostelWorldChallengeUITests.framework */,
+				7E485C3AAA6373B380F98213 /* Pods_Repository.framework */,
+				FDEDDF2639246998596BD746 /* Pods_RespositoryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		179460782316791300060205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179460812316791300060205 /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1794608B2316795C00060205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179460942316795C00060205 /* Repository.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		179460532316773500060205 /* HostelWorldChallenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 179460712316773700060205 /* Build configuration list for PBXNativeTarget "HostelWorldChallenge" */;
 			buildPhases = (
+				564B1B03542A5532D06B9A70 /* [CP] Check Pods Manifest.lock */,
 				179460502316773500060205 /* Sources */,
 				179460512316773500060205 /* Frameworks */,
 				179460522316773500060205 /* Resources */,
+				179460892316791300060205 /* Embed Frameworks */,
+				F1C7575224EDA8C947AC2EE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				179460832316791300060205 /* PBXTargetDependency */,
+				179460962316795C00060205 /* PBXTargetDependency */,
 			);
 			name = HostelWorldChallenge;
 			productName = HostelWorldChallenge;
@@ -120,6 +369,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 179460742316773700060205 /* Build configuration list for PBXNativeTarget "HostelWorldChallengeUITests" */;
 			buildPhases = (
+				9FB14FFB95268C5423C1A4D7 /* [CP] Check Pods Manifest.lock */,
 				179460642316773700060205 /* Sources */,
 				179460652316773700060205 /* Frameworks */,
 				179460662316773700060205 /* Resources */,
@@ -133,6 +383,64 @@
 			productName = HostelWorldChallengeUITests;
 			productReference = 179460682316773700060205 /* HostelWorldChallengeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1794607C2316791300060205 /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179460882316791300060205 /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				179460782316791300060205 /* Headers */,
+				179460792316791300060205 /* Sources */,
+				1794607A2316791300060205 /* Frameworks */,
+				1794607B2316791300060205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = 1794607D2316791300060205 /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1794608F2316795C00060205 /* Repository */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179460992316795C00060205 /* Build configuration list for PBXNativeTarget "Repository" */;
+			buildPhases = (
+				1ADBA51C71706B6393E69058 /* [CP] Check Pods Manifest.lock */,
+				1794608B2316795C00060205 /* Headers */,
+				1794608C2316795C00060205 /* Sources */,
+				1794608D2316795C00060205 /* Frameworks */,
+				1794608E2316795C00060205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Repository;
+			productName = Repository;
+			productReference = 179460902316795C00060205 /* Repository.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1794609F2316798E00060205 /* RespositoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179460A82316798E00060205 /* Build configuration list for PBXNativeTarget "RespositoryTests" */;
+			buildPhases = (
+				42E09D7615066792461E19DB /* [CP] Check Pods Manifest.lock */,
+				1794609C2316798E00060205 /* Sources */,
+				1794609D2316798E00060205 /* Frameworks */,
+				1794609E2316798E00060205 /* Resources */,
+				396EC9204142CF148856A997 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				179460A72316798E00060205 /* PBXTargetDependency */,
+				179460C02316918500060205 /* PBXTargetDependency */,
+			);
+			name = RespositoryTests;
+			productName = RespositoryTests;
+			productReference = 179460A02316798E00060205 /* RespositoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -148,6 +456,18 @@
 						CreatedOnToolsVersion = 10.3;
 					};
 					179460672316773700060205 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 179460532316773500060205;
+					};
+					1794607C2316791300060205 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					1794608F2316795C00060205 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					1794609F2316798E00060205 = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 179460532316773500060205;
 					};
@@ -168,6 +488,9 @@
 			targets = (
 				179460532316773500060205 /* HostelWorldChallenge */,
 				179460672316773700060205 /* HostelWorldChallengeUITests */,
+				1794607C2316791300060205 /* Domain */,
+				1794608F2316795C00060205 /* Repository */,
+				1794609F2316798E00060205 /* RespositoryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,7 +502,6 @@
 			files = (
 				179460622316773700060205 /* LaunchScreen.storyboard in Resources */,
 				1794605F2316773700060205 /* Assets.xcassets in Resources */,
-				1794605D2316773500060205 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,14 +512,159 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1794607B2316791300060205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1794608E2316795C00060205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1794609E2316798E00060205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ADBA51C71706B6393E69058 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Repository-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		396EC9204142CF148856A997 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RespositoryTests/Pods-RespositoryTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RespositoryTests/Pods-RespositoryTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RespositoryTests/Pods-RespositoryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42E09D7615066792461E19DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RespositoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		564B1B03542A5532D06B9A70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HostelWorldChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB14FFB95268C5423C1A4D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HostelWorldChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1C7575224EDA8C947AC2EE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HostelWorldChallenge/Pods-HostelWorldChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HostelWorldChallenge/Pods-HostelWorldChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HostelWorldChallenge/Pods-HostelWorldChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		179460502316773500060205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1794605A2316773500060205 /* ViewController.swift in Sources */,
 				179460582316773500060205 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +677,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		179460792316791300060205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179460B12316823000060205 /* Address.swift in Sources */,
+				179460AF2316818500060205 /* Property.swift in Sources */,
+				179460AD23167A7000060205 /* PropertySummary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1794608C2316795C00060205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179460BB2316862C00060205 /* HostelWorldEndpoint.swift in Sources */,
+				179460B62316840700060205 /* HostelWorldMockWebservice.swift in Sources */,
+				179460BE23168AD800060205 /* Domain + Decodable.swift in Sources */,
+				179460B82316842800060205 /* DataStore.swift in Sources */,
+				179460B3231683A100060205 /* RepositoryContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1794609C2316798E00060205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179460A32316798E00060205 /* RespositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -218,17 +715,29 @@
 			target = 179460532316773500060205 /* HostelWorldChallenge */;
 			targetProxy = 179460692316773700060205 /* PBXContainerItemProxy */;
 		};
+		179460832316791300060205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1794607C2316791300060205 /* Domain */;
+			targetProxy = 179460822316791300060205 /* PBXContainerItemProxy */;
+		};
+		179460962316795C00060205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1794608F2316795C00060205 /* Repository */;
+			targetProxy = 179460952316795C00060205 /* PBXContainerItemProxy */;
+		};
+		179460A72316798E00060205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1794608F2316795C00060205 /* Repository */;
+			targetProxy = 179460A62316798E00060205 /* PBXContainerItemProxy */;
+		};
+		179460C02316918500060205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 179460532316773500060205 /* HostelWorldChallenge */;
+			targetProxy = 179460BF2316918500060205 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1794605B2316773500060205 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1794605C2316773500060205 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		179460602316773700060205 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,11 +867,13 @@
 		};
 		179460722316773700060205 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCDF0A8D7E6B231729D36994 /* Pods-HostelWorldChallenge.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPBB5C5CRP;
-				INFOPLIST_FILE = HostelWorldChallenge/Info.plist;
+				INFOPLIST_FILE = HostelWorldChallenge/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,11 +887,13 @@
 		};
 		179460732316773700060205 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A024A40F2E8972170C2B876 /* Pods-HostelWorldChallenge.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPBB5C5CRP;
-				INFOPLIST_FILE = HostelWorldChallenge/Info.plist;
+				INFOPLIST_FILE = HostelWorldChallenge/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,6 +907,7 @@
 		};
 		179460752316773700060205 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1631FE2E560FCDCE8123C2D8 /* Pods-HostelWorldChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -414,6 +928,7 @@
 		};
 		179460762316773700060205 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB8BC835C4459AC2D2C8CCF3 /* Pods-HostelWorldChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -429,6 +944,168 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HostelWorldChallenge;
+			};
+			name = Release;
+		};
+		179460862316791300060205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		179460872316791300060205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1794609A2316795C00060205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83629ED2C8395C1C782A3847 /* Pods-Repository.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1794609B2316795C00060205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12A2EB2F3D9380D57AD4F4C /* Pods-Repository.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Repository/Support/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.Repository;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		179460A92316798E00060205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A129999A114DC5CBFE1BA92 /* Pods-RespositoryTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				INFOPLIST_FILE = RespositoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.RespositoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HostelWorldChallenge.app/HostelWorldChallenge";
+			};
+			name = Debug;
+		};
+		179460AA2316798E00060205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5584E4A119D4021D4C590478 /* Pods-RespositoryTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LPBB5C5CRP;
+				INFOPLIST_FILE = RespositoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fermoya.challenge.RespositoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HostelWorldChallenge.app/HostelWorldChallenge";
 			};
 			name = Release;
 		};
@@ -458,6 +1135,33 @@
 			buildConfigurations = (
 				179460752316773700060205 /* Debug */,
 				179460762316773700060205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179460882316791300060205 /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179460862316791300060205 /* Debug */,
+				179460872316791300060205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179460992316795C00060205 /* Build configuration list for PBXNativeTarget "Repository" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1794609A2316795C00060205 /* Debug */,
+				1794609B2316795C00060205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		179460A82316798E00060205 /* Build configuration list for PBXNativeTarget "RespositoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				179460A92316798E00060205 /* Debug */,
+				179460AA2316798E00060205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
