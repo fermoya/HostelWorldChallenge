@@ -19,11 +19,15 @@ fileprivate struct OverallRating: Decodable {
     var overallPercentage: Float { return Float(overall) / Float(numberOfRatings) }
 }
 
-fileprivate struct Image: Decodable {
+fileprivate struct Image: Decodable, Comparable {
     private var suffix: String
     private var prefix: String
     var smallSize: String { return "\(prefix)_s\(suffix)" }
     var largeSize: String { return "\(prefix)_l\(suffix)" }
+    
+    static func < (lhs: Image, rhs: Image) -> Bool {
+        return lhs.smallSize < rhs.smallSize
+    }
 }
 
 fileprivate struct City: Decodable {
@@ -44,7 +48,7 @@ extension PropertySummary: Decodable {
         let name = try! container.decode(String.self, forKey: .name)
         let type = try! container.decode(String.self, forKey: .type)
         let rating = try? container.decode(OverallRating.self, forKey: .overallRating)
-        let images = try! container.decode([Image].self, forKey: .images)
+        let images = try! container.decode([Image].self, forKey: .images).sorted()
         
         self.init(id: id,
                   name: name,
@@ -75,11 +79,11 @@ extension Property: Decodable {
         let directions = try! container.decode(String.self, forKey: .directions)
         
         let rating = try? container.decode(OverallRating.self, forKey: .overallRating)
-        let images = try! container.decode([Image].self, forKey: .images)
+        let images = try! container.decode([Image].self, forKey: .images).sorted()
         let city = try! container.decode(City.self, forKey: .city)
         
-        let address = Address(firstStreet: address1,
-                              secondStreet: address2,
+        let address = Address(street: address1,
+                              checkIn: address2,
                               city: city.name,
                               country: city.country)
         

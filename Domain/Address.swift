@@ -10,18 +10,18 @@ import Foundation
 
 public struct Address {
     
-    public var firstStreet: String
-    public var secondStreet: String
+    public var street: String
+    public var checkIn: String
     public var city: String
     public var country: String
     
-    public init(firstStreet: String,
-                secondStreet: String,
+    public init(street: String,
+                checkIn: String,
                 city: String,
                 country: String) {
         
-        self.firstStreet = firstStreet
-        self.secondStreet = secondStreet
+        self.street = street
+        self.checkIn = checkIn
         self.city = city
         self.country = country
     }

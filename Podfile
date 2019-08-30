@@ -31,3 +31,12 @@ target 'RespositoryTests' do
   pod 'Mockingjay'
 
 end
+
+target 'UserInterface' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for UserInterface
+  pod 'Kingfisher'
+
+end
