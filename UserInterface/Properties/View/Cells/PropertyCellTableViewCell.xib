@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="146" id="KGk-i7-Jjw" customClass="PropertyCellTableViewCell" customModule="UserInterface" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="482" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uru-Fw-EKc">
+                        <rect key="frame" x="16" y="16" width="159" height="103.5"/>
+                        <color key="backgroundColor" red="0.8246168160685603" green="0.8246168160685603" blue="0.8246168160685603" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="uru-Fw-EKc" secondAttribute="height" multiplier="250:163" id="GLE-x7-6MB"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAX-Uz-mgv">
+                        <rect key="frame" x="191" y="41" width="275" height="53.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1c-1T-usb">
+                                <rect key="frame" x="0.0" y="0.0" width="275" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8R-f5-chP">
+                                <rect key="frame" x="0.0" y="26.5" width="57" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-lm-Qt9">
+                                <rect key="frame" x="219" y="32.5" width="56" height="15"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTA-uH-llm">
+                                        <rect key="frame" x="23" y="-0.5" width="33" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-star" translatesAutoresizingMaskIntoConstraints="NO" id="aTh-Fi-5D3">
+                                        <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="aTh-Fi-5D3" firstAttribute="centerY" secondItem="PFX-lm-Qt9" secondAttribute="centerY" id="2tO-dB-QWX"/>
+                                    <constraint firstItem="rTA-uH-llm" firstAttribute="leading" secondItem="aTh-Fi-5D3" secondAttribute="trailing" constant="8" id="Fcv-er-xUL"/>
+                                    <constraint firstItem="rTA-uH-llm" firstAttribute="centerY" secondItem="aTh-Fi-5D3" secondAttribute="centerY" id="GoS-Tz-Idl"/>
+                                    <constraint firstItem="aTh-Fi-5D3" firstAttribute="leading" secondItem="PFX-lm-Qt9" secondAttribute="leading" id="NlE-33-RM4"/>
+                                    <constraint firstAttribute="height" constant="15" id="U5v-5h-tci"/>
+                                    <constraint firstAttribute="width" constant="56" id="eYO-6p-kUO"/>
+                                    <constraint firstItem="aTh-Fi-5D3" firstAttribute="top" secondItem="PFX-lm-Qt9" secondAttribute="top" id="jlc-WI-J4W"/>
+                                    <constraint firstAttribute="trailing" secondItem="rTA-uH-llm" secondAttribute="trailing" id="sDQ-Qo-gqE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="v1c-1T-usb" secondAttribute="trailing" id="EB5-Eq-bfs"/>
+                            <constraint firstAttribute="bottom" secondItem="a8R-f5-chP" secondAttribute="bottom" id="Nnn-V2-FaG"/>
+                            <constraint firstAttribute="trailing" secondItem="PFX-lm-Qt9" secondAttribute="trailing" id="QfC-eV-wKb"/>
+                            <constraint firstItem="a8R-f5-chP" firstAttribute="top" secondItem="v1c-1T-usb" secondAttribute="bottom" constant="7" id="U6h-7P-qbF"/>
+                            <constraint firstItem="PFX-lm-Qt9" firstAttribute="centerY" secondItem="a8R-f5-chP" secondAttribute="centerY" id="UhJ-Tq-U3N"/>
+                            <constraint firstItem="a8R-f5-chP" firstAttribute="leading" secondItem="v1c-1T-usb" secondAttribute="leading" id="jHU-Ys-PDn"/>
+                            <constraint firstItem="v1c-1T-usb" firstAttribute="leading" secondItem="NAX-Uz-mgv" secondAttribute="leading" id="xAn-9Z-nZ9"/>
+                            <constraint firstItem="v1c-1T-usb" firstAttribute="top" secondItem="NAX-Uz-mgv" secondAttribute="top" id="zZj-WT-3cT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uru-Fw-EKc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="EEG-rL-ac1"/>
+                    <constraint firstItem="NAX-Uz-mgv" firstAttribute="centerY" secondItem="uru-Fw-EKc" secondAttribute="centerY" id="FyY-Tu-Qn7"/>
+                    <constraint firstItem="uru-Fw-EKc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OcS-uU-lzE"/>
+                    <constraint firstItem="uru-Fw-EKc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.33" id="Ux7-2w-kcg"/>
+                    <constraint firstItem="uru-Fw-EKc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="aK9-vD-W6u"/>
+                    <constraint firstItem="NAX-Uz-mgv" firstAttribute="leading" secondItem="uru-Fw-EKc" secondAttribute="trailing" constant="16" id="k9b-rC-02s"/>
+                    <constraint firstAttribute="trailing" secondItem="NAX-Uz-mgv" secondAttribute="trailing" constant="16" id="xr2-A4-YJO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLabel" destination="v1c-1T-usb" id="E6s-Tr-Cyx"/>
+                <outlet property="ratingLabel" destination="rTA-uH-llm" id="YPt-gv-MnW"/>
+                <outlet property="starImageView" destination="aTh-Fi-5D3" id="Ui0-ss-dMZ"/>
+                <outlet property="thumbnailImageView" destination="uru-Fw-EKc" id="x7H-Oz-9bg"/>
+                <outlet property="typeButton" destination="a8R-f5-chP" id="dWX-91-pvs"/>
+            </connections>
+            <point key="canvasLocation" x="255.07246376811597" y="123.88392857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-star" width="15" height="15"/>
+    </resources>
+</document>
